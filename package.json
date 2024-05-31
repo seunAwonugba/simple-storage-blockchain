@@ -1,0 +1,22 @@
+{
+    "name": "ether-simple-storage",
+    "version": "1.0.0",
+    "description": "",
+    "main": "deploy.js",
+    "scripts": {
+        "start": "node deploy.js",
+        "dev": "nodemon deploy.js",
+        "compile": "solcjs --bin --abi --include-path node_modules/ --base-path . -o . SimpleStorage.sol"
+    },
+    "author": "seun awonugba",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^16.4.5",
+        "ethers": "^6.12.1",
+        "ganache": "^7.9.2",
+        "nodemon": "^3.1.1",
+        "solc": "^0.8.7-fixed",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.4.5"
+    }
+}
